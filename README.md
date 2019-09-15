@@ -1,3 +1,2 @@
-# intuit-js-code-samples
-
+# intuit-js-code
 1- intuitProductSort.js
