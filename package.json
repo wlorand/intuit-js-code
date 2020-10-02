@@ -6,15 +6,7 @@
   "scripts": {
     "exec": "node intuitProductSort"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/wlorand/mydata-js-code.git"
-  },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/wlorand/mydata-js-code/issues"
-  },
-  "homepage": "https://github.com/wlorand/mydata-js-code#readme"
+  "license": "ISC"
 }

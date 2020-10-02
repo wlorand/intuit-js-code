@@ -1,7 +1,7 @@
 /**
- * File: sortProductList.js
+ * File: intuitProductSort.js
  * Desc: sort Intuit product list to a-z order,
- *     listing aid entry first if present from state.queryParams
+ *     listing 'aid' entry first if intuit product referrer present from state.queryParams
  */
 
 const rawProductList = [
@@ -10,7 +10,7 @@ const rawProductList = [
   { productName: 'Mint', productId: 'mt' },
 ];
 
-function sortProductList(productList, aid = 0) {
+function sortProductList(productList, aid = '') {
   let finalProductList = [];
   const sortedProductList = productList.sort((a, b) =>
     a.productName > b.productName ? 1 : -1
@@ -27,7 +27,7 @@ function sortProductList(productList, aid = 0) {
     const productListNoAid = sortedProductList.filter(
       (product) => product.productId !== aid
     );
-    // use array spread to get products in final order
+    // use Array spread to get products in final order
     finalProductList = [...aidProduct, ...productListNoAid];
   }
   return finalProductList;
